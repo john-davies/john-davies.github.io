@@ -1,0 +1,429 @@
+{
+	"interfaceVersion": "A",
+	"scenes": [
+		{
+			"id": "fan_brycheiniog",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/fan_brycheiniog", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 5, "cubeResolution": 6656 },
+			"hotSpots": [
+				{ "pitch": 1.7, "yaw": -69.1, "type": "scene", "text": "Garreg Lwyd Trig Point", "sceneId": "garreg_lwyd", "targetPitch": 2.7, "targetYaw": -66.9 },
+				{ "pitch": -1.6, "yaw": -39.2, "type": "scene", "text": "Carreg yr Ogof Trig Point", "sceneId": "carreg_yr_ogof", "targetPitch": 4.8, "targetYaw": -43.4 },
+				{ "pitch": 1.3, "yaw": 160.7, "type": "scene", "text": "Fan Gyhiych Trig Point", "sceneId": "fan_gyhirych", "targetPitch": 3.1, "targetYaw": 17.4 },
+				{ "pitch": 1.1, "yaw": 156.1, "type": "scene", "text": "Fan Nedd Trig Point", "sceneId": "fan_nedd", "targetPitch": 5, "targetYaw": -77.5 },
+				{ "pitch": -0.3, "yaw": -95, "type": "scene", "text": "Bwlch Y Ddeuwynt Trig Point", "sceneId": "bwlch_y_ddeuwynt", "targetPitch": 5.8, "targetYaw": 33.8 },
+				{ "pitch": 1.4, "yaw": -63.9, "type": "scene", "text": "Tair Carn Isaf Trig Point", "sceneId": "tair_carn_isaf", "targetPitch": 3, "targetYaw": -166.7 },
+				{ "pitch": -14.7, "yaw": 147.25, "type": "3d", "text": "Llyn y Fan Fawr", "URL": "https://sketchfab.com/models/ca41cf4841ff46d0bf8c28f369bf52a3/embed", "Comment": "LiDAR data from the Welsh Government Portal ( see Sketchfab page for link )<br>Image data ©2019 Google" },
+				{ "pitch": 1.1, "yaw": -62.7, "type": "info", "text": "Foel Fawr Limestone Workings", "URL": "https://theretiredengineer.wordpress.com/2017/12/17/brecon-beacons-industrial-remains/" },
+				{ "pitch": -2, "yaw": 39.8, "type": "info", "text": "Usk Reservoir", "URL": "https://en.wikipedia.org/wiki/Usk_Reservoir" },
+				{ "pitch": 2.9, "yaw": 136, "type": "info", "text": "Pen y Fan", "URL": "https://en.wikipedia.org/wiki/Pen_y_Fan" }
+			],
+			"mapData": { "lat": 51.882276, "long": -3.708027 },
+			"extraData": { "displayName": "Fan Brycheiniog", "imagePath": "assets/preview/fan_brycheiniog.jpg", "height": 802, "order": 1, "OsGridRef": "SN825218", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "mynydd_myddfai",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.95312, "long": -3.737567 },
+			"extraData": { "displayName": "Mynydd Myddfai", "imagePath": "assets/preview/not_available.jpg", "height": 440, "order": 12, "OsGridRef": "SN807297", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "bwlch_y_ddeuwynt",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/bwlch_y_ddeuwynt", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 5, "cubeResolution": 6560 },
+			"hotSpots": [
+				{ "pitch": 5.8, "yaw": 33.8, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": -0.3, "targetYaw": -95 }
+			],
+			"mapData": { "lat": 51.842236, "long": -3.756822 },
+			"extraData": { "displayName": "Bwlch y Ddeuwynt", "imagePath": "assets/preview/bwlch_y_ddeuwynt.jpg", "height": 472, "order": 3, "OsGridRef": "SN791174", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "carreg_yr_ogof",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/carreg_yr_ogof", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 5, "cubeResolution": 6544 },
+			"hotSpots": [
+				{ "pitch": 4.8, "yaw": -43.4, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": -1.6, "targetYaw": -39.2 },
+				{ "pitch": 2, "yaw": 100.6, "type": "scene", "text": "Garreg Lwyd Trig Point", "sceneId": "garreg_lwyd", "targetPitch": 1.6, "targetYaw": -75.9 }
+			],
+			"mapData": { "lat": 51.878226, "long": -3.776951 },
+			"extraData": { "displayName": "Carreg Yr Ogof", "imagePath": "assets/preview/carreg_yr_ogof.jpg", "height": 586, "order": 3, "OsGridRef": "SN778215", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "cribarth",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.814032, "long": -3.701016 },
+			"extraData": { "displayName": "Cribarth", "imagePath": "assets/preview/not_available.jpg", "height": 423, "order": 12, "OsGridRef": "SN828142", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "garreg_lwyd",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/garreg_lwyd", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 5, "cubeResolution": 6528 },
+			"hotSpots": [
+				{ "pitch": 3.2, "yaw": -47.2, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.7, "targetYaw": -69.1 },
+				{ "pitch": 2.1, "yaw": -62.4, "type": "scene", "text": "Carreg yr Ogof Trig Point", "sceneId": "carreg_yr_ogof", "targetPitch": 2, "targetYaw": 100.6 },
+				{ "pitch": 0.7, "yaw": 147, "type": "scene", "text": "Tair Carn Isaf Trig Point", "sceneId": "tair_carn_isaf", "targetPitch": 4, "targetYaw": -158.4 }
+			],
+			"mapData": { "lat": 51.845547, "long": -3.830031 },
+			"extraData": { "displayName": "Garreg Lwyd", "imagePath": "assets/preview/garreg_lwyd.jpg", "height": 617, "order": 2, "OsGridRef": "SN740179", "comment": "This is a comment" },
+			"versionData": { "version": 1.2, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "meity_fawr",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.916002, "long": -3.666136 },
+			"extraData": { "displayName": "Meity Fawr", "imagePath": "assets/preview/not_available.jpg", "height": 384, "order": 13, "OsGridRef": "SN855255", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "tair_carn_isaf",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/tair_carn_isaf", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 6, "cubeResolution": 8928 },
+			"hotSpots": [
+				{ "pitch": 3.9, "yaw": -166.7, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.4, "targetYaw": -63.9 },
+				{ "pitch": 4, "yaw": -158.4, "type": "scene", "text": "Garreg Lwyd Trig Point", "sceneId": "garreg_lwyd", "targetPitch": 0.7, "targetYaw": 147 },
+				{ "pitch": -0.5, "yaw": 90, "type": "info", "text": "Carreg Cennen Castle", "URL": "https://cadw.gov.wales/visit/places-to-visit/carreg-cennen" }
+			],
+			"mapData": { "lat": 51.833836, "long": -3.911926 },
+			"extraData": { "displayName": "Tair Carn Isaf", "imagePath": "assets/preview/tair_carn_isaf.jpg", "height": 459, "order": 2, "OsGridRef": "SN684168", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "twyn_henwen",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": { "pitch": "" },
+			"mapData": { "lat": 51.956686, "long": -3.680455 },
+			"extraData": { "displayName": "Twyn Henwen", "imagePath": "assets/preview/not_available.jpg", "height": 383, "order": 13, "OsGridRef": "SN846300", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "blaen_cwm",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.811873, "long": -3.604824 },
+			"extraData": { "displayName": "Blaen Cwm", "imagePath": "assets/preview/not_available.jpg", "height": 403, "order": 13, "OsGridRef": "SN895138", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "cader_fawr",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.800091, "long": -3.483638 },
+			"extraData": { "displayName": "Cader Fawr", "imagePath": "assets/preview/not_available.jpg", "height": 486, "order": 12, "OsGridRef": "SN978123", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "carreg_fawr_hill",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.812055, "long": -3.530629 },
+			"extraData": { "displayName": "Carreg Fawr Hill", "imagePath": "assets/preview/not_available.jpg", "height": 457, "order": 13, "OsGridRef": "SN946137", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "fan_fawr",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.859414, "long": -3.504901 },
+			"extraData": { "displayName": "Fan Fawr", "imagePath": "assets/preview/not_available.jpg", "height": 715, "order": 13, "OsGridRef": "SN965189", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "fan_frynych",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.893849, "long": -3.515757 },
+			"extraData": { "displayName": "Fan Frynych", "imagePath": "assets/preview/not_available.jpg", "height": 629, "order": 12, "OsGridRef": "SN958228", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "fan_gyhirych",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/fan_gyhirych", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 6, "cubeResolution": 9120 },
+			"hotSpots": [
+				{ "pitch": 3.1, "yaw": 17.4, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.3, "targetYaw": 160.7 },
+				{ "pitch": 2.7, "yaw": 161.3, "type": "info", "text": "Pen y Fan", "URL": "https://en.wikipedia.org/wiki/Pen_y_Fan" },
+				{ "pitch": 1.3, "yaw": 179.6, "type": "scene", "text": "Fan Nedd Trig Point", "sceneId": "fan_nedd", "targetPitch": 3.6, "targetYaw": -87.4 }
+			],
+			"mapData": { "lat": 51.85897, "long": -3.626951 },
+			"extraData": { "displayName": "Fan Gyhirych", "imagePath": "assets/preview/fan_gyhirych.jpg", "height": 725, "order": 3, "OsGridRef": "SN881191", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "fan_nedd",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/fan_nedd", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 6, "cubeResolution": 9312 },
+			"hotSpots": [
+				{ "pitch": 6.2, "yaw": -77.5, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.1, "targetYaw": 156.1 },
+				{ "pitch": 2.7, "yaw": 64.2, "type": "info", "text": "Pen y Fan", "URL": "https://en.wikipedia.org/wiki/Pen_y_Fan" },
+				{ "pitch": 6.4, "yaw": -87.4, "type": "scene", "text": "Fan Gyhirych Trig Point", "sceneId": "fan_gyhirych", "targetPitch": 1.3, "targetYaw": 179.6 }
+			],
+			"mapData": { "lat": 51.853637, "long": -3.57919 },
+			"extraData": { "displayName": "Fan Nedd", "imagePath": "assets/preview/not_available.jpg", "height": 664, "order": 2, "OsGridRef": "SN913184", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "foel_penderyn",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.76714, "long": -3.53961 },
+			"extraData": { "displayName": "Foel Penderyn", "imagePath": "assets/preview/not_available.jpg", "height": 371, "order": 13, "OsGridRef": "SN939087", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "heol_senni",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.882799, "long": -3.581591 },
+			"extraData": { "displayName": "Heol Senni", "imagePath": "assets/preview/not_available.jpg", "height": 604, "order": 13, "OsGridRef": "SN912217", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "black_pill",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.600012, "long": -3.991477 },
+			"extraData": { "displayName": "Black Pill", "imagePath": "assets/preview/not_available.jpg", "height": 11, "order": 13, "OsGridRef": "SS622909", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "cefn_bryn",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.580011, "long": -4.140198 },
+			"extraData": { "displayName": "Cefn Bryn", "imagePath": "assets/preview/not_available.jpg", "height": 186, "order": 11, "OsGridRef": "SS518890", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "cil_ifor_top",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.609707, "long": -4.157962 },
+			"extraData": { "displayName": "Cil Ifor Top", "imagePath": "assets/preview/not_available.jpg", "height": 118, "order": 13, "OsGridRef": "SS507923", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "clyne_golf_course",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.59908, "long": -4.025138 },
+			"extraData": { "displayName": "Clyne Golf Course", "imagePath": "assets/preview/not_available.jpg", "height": 132, "order": 13, "OsGridRef": "SS598909", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "fairwood",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.611771, "long": -4.065379 },
+			"extraData": { "displayName": "Fairwood", "imagePath": "assets/preview/not_available.jpg", "height": 104, "order": 12, "OsGridRef": "SS571923", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "high_penard",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.560918, "long": -4.064271 },
+			"extraData": { "displayName": "High Penard", "imagePath": "assets/preview/not_available.jpg", "height": 98, "order": 13, "OsGridRef": "SS570867", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "llanmadoc_hill",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.608654, "long": -4.268098 },
+			"extraData": { "displayName": "Llanmadoc Hill", "imagePath": "assets/preview/not_available.jpg", "height": 186, "order": 12, "OsGridRef": "SS430924", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "mumbles_hill",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.570149, "long": -3.986706 },
+			"extraData": { "displayName": "Mumbles Hill", "imagePath": "assets/preview/not_available.jpg", "height": 77, "order": 12, "OsGridRef": "SS624876", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "oxwich",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.549729, "long": -4.157116 },
+			"extraData": { "displayName": "Oxwich", "imagePath": "assets/preview/not_available.jpg", "height": 86, "order": 13, "OsGridRef": "SS505856", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "penclawdd",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.636973, "long": -4.105162 },
+			"extraData": { "displayName": "Penclawdd", "imagePath": "assets/preview/not_available.jpg", "height": 104, "order": 13, "OsGridRef": "SS544952", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "port_eynon",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.553028, "long": -4.232125 },
+			"extraData": { "displayName": "Port Eynon", "imagePath": "assets/preview/not_available.jpg", "height": 108, "order": 13, "OsGridRef": "SS453862", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "reynoldston",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.591067, "long": -4.186675 },
+			"extraData": { "displayName": "Reynoldston", "imagePath": "assets/preview/not_available.jpg", "height": 154, "order": 13, "OsGridRef": "SS486903", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "rhossili_down",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.5764, "long": -4.281572 },
+			"extraData": { "displayName": "Rhossili Down", "imagePath": "assets/preview/not_available.jpg", "height": 193, "order": 13, "OsGridRef": "SS420889", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "ryers_down",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.606818, "long": -4.228894 },
+			"extraData": { "displayName": "Ryers Down", "imagePath": "assets/preview/not_available.jpg", "height": 115, "order": 13, "OsGridRef": "SS457921", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "bryn_mawr",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.762214, "long": -3.898639 },
+			"extraData": { "displayName": "Bryn Mawr", "imagePath": "assets/preview/not_available.jpg", "height": 351, "order": 12, "OsGridRef": "SN691088", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "graig_fawr",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.74334, "long": -4.003039 },
+			"extraData": { "displayName": "Graig Fawr", "imagePath": "assets/preview/not_available.jpg", "height": 277, "order": 12, "OsGridRef": "SN618069", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "kilvey_hill",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.629256, "long": -3.921103 },
+			"extraData": { "displayName": "Killvey Hill", "imagePath": "assets/preview/not_available.jpg", "height": 193, "order": 0, "OsGridRef": "SS671940", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "mynydd_bettws",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.777834, "long": -3.944895 },
+			"extraData": { "displayName": "Mynydd Bettws", "imagePath": "assets/preview/not_available.jpg", "height": 339, "order": 13, "OsGridRef": "SN659106", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "mynydd_llangyndeyrn",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.797428, "long": -4.202234 },
+			"extraData": { "displayName": "Mynydd Llangyndeyrn", "imagePath": "assets/preview/not_available.jpg", "height": 263, "order": 12, "OsGridRef": "SN482132", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "mynydd_pysgodlyn",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.724809, "long": -3.97897 },
+			"extraData": { "displayName": "Mynydd Pysgodlyn", "imagePath": "assets/preview/not_available.jpg", "height": 263, "order": 0, "OsGridRef": "SN634048", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "mynydd_sylen",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/mynydd_sylen", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 6, "cubeResolution": 8696 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.751029, "long": -4.152183 },
+			"extraData": { "displayName": "Mynydd Sylen", "imagePath": "assets/preview/mynydd_sylen.jpg", "height": 285, "order": 3, "OsGridRef": "SN515080", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		},
+		{
+			"id": "mynydd_y_gwair",
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"hotSpots": [
+			],
+			"mapData": { "lat": 51.729424, "long": -3.916898 },
+			"extraData": { "displayName": "Mynydd y Gwair", "imagePath": "assets/preview/not_available.jpg", "height": 318, "order": 13, "OsGridRef": "SN677052", "comment": "This is a comment" },
+			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
+		}
+	]
+}

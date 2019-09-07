@@ -1,10 +1,160 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-   <head>
-      <title>HTML Document</title>
-   </head>
-   <body>
-      <p>This is demo text.</p>
-   </body>
-</html>
 
+<head>
+  <title>The Retired Engineer - Trig Point Map</title>
+  <meta name="description" content="The Retired Engineer - Trig Point Map" />
+  <meta name="keywords" content="retired engineer trig point map" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/trigmap.css" title="style" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+  crossorigin=""></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.3/build/pannellum.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.3/build/pannellum.js"></script>
+</head>
+
+<body onload="initPage()">
+  <div class="grid-container">
+    <div class="titleRowLeft headerText">
+      Trig Point Navigator
+    </div>
+    <div class="titleRowRight headerText">
+      <span id="aboutShow" class="aboutText">About</span>
+    </div>
+    <div class="helpTextStyle">
+      <em>Navigate around the panorama using the mouse. Click on the links in the panorama
+        or on the map to switch to a different trig point</em>
+    </div>
+    <div id="panorama" class="panoramaViewer">
+    </div>
+    <div id="map" class="mapViewer">
+    </div>
+    <div id="viewerKeyText" class="viewerKeyStyle" >
+      <table class="viewerKeyTableStyle">
+        <tr>
+          <td colspan="2" class="headerText">&nbsp;&nbsp;Viewer Key</td>
+        </tr>
+        <tr>
+          <td><img src="assets/arrow.jpg" alt="Arrow"> </td>
+          <td class="generalText">Link to another trig point</td>
+        </tr>
+        <tr>
+          <td><img src="assets/info.jpg" alt="Information"></td>
+          <td class="generalText">Information link</td>
+        </tr>
+        <tr>
+          <td><img src="assets/3d.png" alt="3D view"></td>
+          <td class="generalText">Object 3D view available</td>
+        </tr>
+      </table>
+  </div>
+    <div id="extraText" class="extraTextStyle generalText">
+      <img src="assets/preview.jpg" alt="Preview" class="extraImageStyle" id="extraTextImage">
+      <span id="extraTextTitle" class="extraTitleStyle">&nbsp;</span>
+      <table>
+        <tr>
+          <td><em>Height ( m )</em></td>
+          <td id="extraTextHeight">&nbsp;</td>
+        </tr>
+        <tr>
+          <td><em>Location ( Lat / Long )</em></td>
+          <td id="extraTextLatLong">&nbsp;</td>
+        </tr>
+          <tr>
+          <td><em>Location ( OS Grid Ref )</em></td>
+          <td id="extraTextGridRef"><div style="word-wrap: break-word;">&nbsp;</div></td>
+        </tr>
+      </table>
+    </div>
+  <div id="mapKeyText" class="mapKeyStyle" >
+    <table class="mapKeyTableStyle">
+      <tr>
+        <td colspan="2" class="headerText">&nbsp;&nbsp;Map Key</td>
+      </tr>
+      <tr>
+        <td><img src="assets/markers/marker-icon-red.png" height="20" alt="Red marker"></td>
+        <td class="generalText">Trig point order #1 </td>
+      </tr>
+      <tr>
+        <td><img src="assets/markers/marker-icon-yellow.png" height="20" alt="Yellow marker"></td>
+        <td class="generalText">Trig point order #2 </td>
+      </tr>
+      <tr>
+        <td><img src="assets/markers/marker-icon-green.png" height="20" alt="Green marker"></td>
+        <td class="generalText">Trig point order #3 </td>
+      </tr>
+      <tr>
+        <td><img src="assets/markers/marker-icon-blue.png" height="20" alt="Blue marker"></td>
+        <td class="generalText">Trig point order #4 </td>
+      </tr>
+      <tr>
+        <td><img src="assets/markers/marker-icon-black.png" height="20" alt="Black marker"></td>
+        <td class="generalText">Trig point destroyed </td>
+      </tr>
+      <tr>
+        <td><img src="assets/markers/marker-icon-red.png" height="20" alt="Red marker">
+            <img src="assets/markers/marker-icon-red-na.png" height="20" alt="Red N/A marker"></td>
+        <td class="generalText">Image available / not available</td>
+      </tr>
+    </table>
+  </div>
+    <script src="js/trigmap.js"></script>
+</div>
+
+<!-- About Popup -->
+<div id="aboutText" class="about">
+  <div class="aboutContent" class="generalText">
+    <span class="aboutClose" id="aboutDismiss">&times;</span>
+    <h2>Trig Point Navigator - About</h2>
+    <p><em>Refer to the <a href="https://github.com/john-davies/john-davies.github.io" target="_blank">GitHub Repository</a> for update details - last updated 7/9/19</em></p>
+    <h3>Panorama Viewer</h3>
+    <ul>
+      <li><a href="https://pannellum.org/" target="_blank">Pannellum</a> - <em>Pannellum is a
+        lightweight, free, and open source panorama viewer for the web.
+        Built using HTML5, CSS3, JavaScript, and WebGL, it is plug-in free.</em></li>
+    </ul>
+    <h3>Map Viewer</h3>
+    <ul>
+      <li><a href="https://leafletjs.com/" target="_blank">Leaflet</a>
+      - <em>an open-source JavaScript library for mobile-friendly
+        interactive maps</em></li>
+      <li>Additional <a href="https://github.com/pointhi/leaflet-color-markers" target="_blank">colour markers</a> for Leaflet, also some added by me.</li>
+    </ul>
+    <h3>Other Media</h3>
+    <ul>
+      <li>Extra icons from <a href="https://romannurik.github.io/AndroidAssetStudio/index.html">Android Asset Studio</a></li>
+      <li>Photographs and 3D models are &copy;<a href="https://theretiredengineer.wordpress.com/" target="_blank">John Davies</a>
+       and are supplied under a Creative Commons licence ( see below )</li>
+    </ul>
+    <hr>
+    <p class="generalText"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+      <img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
+      Unless otherwise specified this work is licensed under a
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+        Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+  </div>
+</div>
+<!-- 3D Viewer Popup -->
+<div id="view3DModel" class="view3D">
+  <div class="view3DContent" class="generalText">
+    <span class="view3DClose" id="view3DDismiss">&times;</span>
+    <div class="sketchfab-embed-wrapper">
+      <iframe id="view3DModelIframe" title="A 3D model" width="640" height="480"
+            src=""
+            frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true"
+            webkitallowfullscreen="true">
+      </iframe>
+      <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+          By <a href="https://sketchfab.com/johndavies?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">John Davies</a>
+          on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+      </p>
+    </div>
+    <p id="view3DModelComment" class="generalTextSmall">Default text</p>
+  </div>
+</div>
+</body>
+</html>
