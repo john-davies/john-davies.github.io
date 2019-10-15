@@ -10,7 +10,7 @@ This is a web app that combines my interests in hill-walking, photography, 3D mo
 
 This stand alone app is a way of pulling these all together and to provide a framework to which I can easily add more panoramas. My plan is to add a pano from each of the trig points on the map and to link them together.
 
-The trig points that I've chosen are a small subset of thise available but they're the ones that I pass fairly regularly on my walks around the western end of the [Brecon Beacons](http://www.breconbeacons.org/) and [Gower Peninsula](https://en.wikipedia.org/wiki/Gower_Peninsula) in Wales.
+The trig points that I've chosen are a small subset of those available but they're the ones that I pass fairly regularly on my walks around the western end of the [Brecon Beacons](http://www.breconbeacons.org/) and [Gower Peninsula](https://en.wikipedia.org/wiki/Gower_Peninsula) in Wales.
 
 ## Additional Software
 
@@ -27,6 +27,10 @@ The web app makes use of some additional software:
   interactive maps.
 
 * Additional [colour markers](https://github.com/pointhi/leaflet-color-markers) for Leaflet, also some added by me.
+
+### Mapping Data
+
+Trig point data from the [Ordnance Survey](https://www.ordnancesurvey.co.uk/gps/legacy-control-information/triangulation-stations)
 
 ### Other Media
 
