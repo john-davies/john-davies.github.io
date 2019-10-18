@@ -112,11 +112,12 @@
 		{
 			"id": "blaen_cwm",
 			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
-			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"multiRes": { "basePath": "assets/pano/blaen_cwm", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 5, "cubeResolution": 6664 },
 			"hotSpots": [
+				{ "pitch": 5, "yaw": -165.5, "type": "scene", "text": "Fan Nedd Trig Point", "sceneId": "fan_nedd", "targetPitch": -4.1, "targetYaw": 147.9 }
 			],
 			"mapData": { "lat": 51.811873, "long": -3.604824 },
-			"extraData": { "displayName": "Blaen Cwm", "imagePath": "assets/preview/not_available.jpg", "height": 403, "order": 13, "OsGridRef": "SN895138", "comment": "This is a comment" },
+			"extraData": { "displayName": "Blaen Cwm", "imagePath": "assets/preview/blaen_cwm.jpg", "height": 403, "order": 3, "OsGridRef": "SN895138", "comment": "This is a comment" },
 			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
 		},
 		{
@@ -179,7 +180,8 @@
 			"hotSpots": [
 				{ "pitch": 6.2, "yaw": -77.5, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.1, "targetYaw": 156.1 },
 				{ "pitch": 2.7, "yaw": 64.2, "type": "info", "text": "Pen y Fan", "URL": "https://en.wikipedia.org/wiki/Pen_y_Fan" },
-				{ "pitch": 6.4, "yaw": -87.4, "type": "scene", "text": "Fan Gyhirych Trig Point", "sceneId": "fan_gyhirych", "targetPitch": 1.3, "targetYaw": 179.6 }
+				{ "pitch": 6.4, "yaw": -87.4, "type": "scene", "text": "Fan Gyhirych Trig Point", "sceneId": "fan_gyhirych", "targetPitch": 1.3, "targetYaw": 179.6 },
+				{ "pitch": -4.1, "yaw": 147.9, "type": "scene", "text": "Blaen Cwm Trig Point", "sceneId": "blaen_cwm", "targetPitch": 5, "targetYaw": -165.5 }
 			],
 			"mapData": { "lat": 51.853637, "long": -3.57919 },
 			"extraData": { "displayName": "Fan Nedd", "imagePath": "assets/preview/not_available.jpg", "height": 664, "order": 2, "OsGridRef": "SN913184", "comment": "This is a comment" },
