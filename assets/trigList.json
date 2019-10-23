@@ -15,7 +15,8 @@
 				{ "pitch": -14.7, "yaw": 147.25, "type": "3d", "text": "Llyn y Fan Fawr", "URL": "https://sketchfab.com/models/ca41cf4841ff46d0bf8c28f369bf52a3/embed", "Comment": "LiDAR data from the Welsh Government Portal ( see Sketchfab page for link )<br>Image data ©2019 Google" },
 				{ "pitch": 1.1, "yaw": -62.7, "type": "info", "text": "Foel Fawr Limestone Workings", "URL": "https://theretiredengineer.wordpress.com/2017/12/17/brecon-beacons-industrial-remains/" },
 				{ "pitch": -2, "yaw": 39.8, "type": "info", "text": "Usk Reservoir", "URL": "https://en.wikipedia.org/wiki/Usk_Reservoir" },
-				{ "pitch": 2.9, "yaw": 136, "type": "info", "text": "Pen y Fan", "URL": "https://en.wikipedia.org/wiki/Pen_y_Fan" }
+				{ "pitch": 2.9, "yaw": 136, "type": "info", "text": "Pen y Fan", "URL": "https://en.wikipedia.org/wiki/Pen_y_Fan" },
+				{ "pitch": 1.2, "yaw": 146.7, "type": "scene", "text": "Heol Senni Trig Point", "sceneId": "heol_senni", "targetPitch": 4.6, "targetYaw": -106.7 }
 			],
 			"mapData": { "lat": 51.882276, "long": -3.708027 },
 			"extraData": { "displayName": "Fan Brycheiniog", "imagePath": "assets/preview/fan_brycheiniog.jpg", "height": 802, "order": 1, "OsGridRef": "SN825218", "comment": "This is a comment" },
@@ -181,10 +182,11 @@
 				{ "pitch": 6.2, "yaw": -77.5, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.1, "targetYaw": 156.1 },
 				{ "pitch": 2.7, "yaw": 64.2, "type": "info", "text": "Pen y Fan", "URL": "https://en.wikipedia.org/wiki/Pen_y_Fan" },
 				{ "pitch": 6.4, "yaw": -87.4, "type": "scene", "text": "Fan Gyhirych Trig Point", "sceneId": "fan_gyhirych", "targetPitch": 1.3, "targetYaw": 179.6 },
-				{ "pitch": -4.1, "yaw": 147.9, "type": "scene", "text": "Blaen Cwm Trig Point", "sceneId": "blaen_cwm", "targetPitch": 5, "targetYaw": -165.5 }
+				{ "pitch": -4.1, "yaw": 147.9, "type": "scene", "text": "Blaen Cwm Trig Point", "sceneId": "blaen_cwm", "targetPitch": 5, "targetYaw": -165.5 },
+				{ "pitch": 1.9, "yaw": -23.3, "type": "scene", "text": "Heol Senni Trig Point", "sceneId": "heol_senni", "targetPitch": 4, "targetYaw": 159.2 }
 			],
 			"mapData": { "lat": 51.853637, "long": -3.57919 },
-			"extraData": { "displayName": "Fan Nedd", "imagePath": "assets/preview/not_available.jpg", "height": 664, "order": 2, "OsGridRef": "SN913184", "comment": "This is a comment" },
+			"extraData": { "displayName": "Fan Nedd", "imagePath": "assets/preview/fan_nedd.jpg", "height": 664, "order": 2, "OsGridRef": "SN913184", "comment": "This is a comment" },
 			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
 		},
 		{
@@ -200,11 +202,15 @@
 		{
 			"id": "heol_senni",
 			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
-			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"multiRes": { "basePath": "assets/pano/heol_senni", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 5, "cubeResolution": 6512 },
 			"hotSpots": [
+				{ "pitch": 4.6, "yaw": 72.3, "type": "info", "text": "Pen y Fan", "URL": "https://en.wikipedia.org/wiki/Pen_y_Fan" },
+				{ "pitch": -1.1, "yaw": 135.6, "type": "info", "text": "Maen Llia", "URL": "https://coflein.gov.uk/en/site/84541/details/maen-llia-standing-stone" },
+				{ "pitch": 4.6, "yaw": -106.7, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.2, "targetYaw": 146.7 },
+				{ "pitch": 4, "yaw": 159.2, "type": "scene", "text": "Fan Nedd Trig Point", "sceneId": "fan_nedd", "targetPitch": 1.9, "targetYaw": -23.3 }
 			],
 			"mapData": { "lat": 51.882799, "long": -3.581591 },
-			"extraData": { "displayName": "Heol Senni", "imagePath": "assets/preview/not_available.jpg", "height": 604, "order": 13, "OsGridRef": "SN912217", "comment": "This is a comment" },
+			"extraData": { "displayName": "Heol Senni", "imagePath": "assets/preview/heol_senni.jpg", "height": 604, "order": 3, "OsGridRef": "SN912217", "comment": "This is a comment" },
 			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
 		},
 		{
