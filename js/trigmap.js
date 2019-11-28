@@ -135,6 +135,17 @@ function initPage() {
 };
 
 function populateScreen( trigList ) {
+
+  // Initialise the map base layers
+  let openstreetmapLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'});
+  let opentopomapLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {	attribution: 'Map data: &copy; <a href="https://www.opentopomap.org/copyright">OpenTopoMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'});
+  let baseMaps = { "OpenStreetMap": openstreetmapLayer, "OpenTopoMap": opentopomapLayer };
+  // Initialise the map marker layers
+  let tpAvailable = L.layerGroup();
+  let tpNotAvailable = L.layerGroup();
+  let tpDestroyed = L.layerGroup();
+  let overlayMaps = { "Available": tpAvailable, "Not available": tpNotAvailable, "Destroyed": tpDestroyed };
+
   // Loop through the downloaded trig points and set up the panoramas
   let firstPoint = true;
   for( const entry of trigList.scenes ){
@@ -151,9 +162,14 @@ function populateScreen( trigList ) {
     tempData.comment = entry.extraData.comment;
 
     if( firstPoint ) {
-      // Initialise the map and set the first point as the default origin
-      map = L.map('map').setView([entry.mapData.lat, entry.mapData.long], 11);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'}).addTo(map);
+      // Set up the map
+      var map = L.map('map', {
+          center: [entry.mapData.lat, entry.mapData.long],
+          zoom: 11,
+          layers: [openstreetmapLayer, tpAvailable, tpNotAvailable, tpDestroyed]
+      });
+      // Add the filter controls
+      L.control.layers(baseMaps, overlayMaps).addTo(map);
       // Initialise the panorama viewer and load the first scene
       viewer = pannellum.viewer('panorama', {
         "default": { "firstScene": entry.id, "sceneFadeDuration": 1000 },
@@ -251,8 +267,64 @@ function populateScreen( trigList ) {
     }
 
     // Add map marker
-    tempData.marker = addMarker( entry.mapData.lat, entry.mapData.long, entry.extraData.order,
-                                  entry.extraData.displayName, entry.id, firstPoint );
+    //tempData.marker = addMarker( entry.mapData.lat, entry.mapData.long, entry.extraData.order,
+    //                              entry.extraData.displayName, entry.id, firstPoint );
+    let iconColour = blackIcon;
+    switch( entry.extraData.order ) {
+      case 1:
+        iconColour = redIcon;
+        break;
+      case 2:
+        iconColour = yellowIcon;
+        break;
+      case 3:
+        iconColour = greenIcon;
+        break;
+      case 4:
+        iconColour = blueIcon;
+        break;
+      case 11:
+        iconColour = redIconNA;
+        break;
+      case 12:
+        iconColour = yellowIconNA;
+        break;
+      case 13:
+        iconColour = greenIconNA;
+        break;
+      case 14:
+        iconColour = blueIconNA;
+        break;
+      default:
+        iconColour = blackIcon;
+    };
+
+    tempData.marker = L.marker([entry.mapData.lat, entry.mapData.long],{icon: iconColour, id: entry.id})
+                          .bindPopup( entry.extraData.displayName, { closeButton: false, autoClose: false, closeOnClick: false });
+    // Add to the relevant map layer
+    if( entry.extraData.order == 0 ) {
+      tempData.marker.addTo(tpDestroyed);
+    }
+    else if ( entry.extraData.order > 10 ) {
+      tempData.marker.addTo(tpNotAvailable);
+    }
+    else {
+      tempData.marker.addTo(tpAvailable);
+    }
+
+    tempData.marker.on('click', mapClick );
+    tempData.marker.on('mouseover', function (e) { this.openPopup(); });
+    tempData.marker.on('mouseout', function (e) {
+      // Don't close if this is the currently selected scene
+      if ( this != trigPointDetails[viewer.getScene()].marker) {
+          this.closePopup();
+      }
+    });
+
+    // If it's the first one then open the pop up
+    if ( firstPoint ) {
+      tempData.marker.openPopup();
+    }
 
     // Store details for this entry
     trigPointDetails[entry.id] = tempData;
@@ -267,56 +339,6 @@ function populateScreen( trigList ) {
   // Set up the scene change listener for the pano view
   viewer.on('scenechange', sceneChangeListener);
 
-};
-
-function addMarker( lat, long, order, name, id, first ) {
-  let iconColour = blackIcon;
-  switch( order ) {
-    case 1:
-      iconColour = redIcon;
-      break;
-    case 2:
-      iconColour = yellowIcon;
-      break;
-    case 3:
-      iconColour = greenIcon;
-      break;
-    case 4:
-      iconColour = blueIcon;
-      break;
-    case 11:
-      iconColour = redIconNA;
-      break;
-    case 12:
-      iconColour = yellowIconNA;
-      break;
-    case 13:
-      iconColour = greenIconNA;
-      break;
-    case 14:
-      iconColour = blueIconNA;
-      break;
-    default:
-      iconColour = blackIcon;
-  };
-
-  let tempMarker = L.marker([lat, long],{icon: iconColour, id: id})
-                        .bindPopup( name, { closeButton: false, autoClose: false, closeOnClick: false });
-  tempMarker.addTo(map);
-  tempMarker.on('click', mapClick );
-  tempMarker.on('mouseover', function (e) { this.openPopup(); });
-  tempMarker.on('mouseout', function (e) {
-    // Don't close if this is the currently selected scene
-    if ( this != trigPointDetails[viewer.getScene()].marker) {
-        this.closePopup();
-    }
-  });
-
-  // If it's the first one then open the pop up
-  if ( first ) {
-    tempMarker.openPopup();
-  }
-  return tempMarker;
 };
 
 function mapClick( e ) {
