@@ -180,3 +180,10 @@
      width: 32px;
      background-image: url('../assets/3d.png');
  }
+
+ /* Comment icon CSS */
+ .comment-hotspot {
+      height: 32px;
+      width: 32px;
+      background-image: url('../assets/comment.png');
+  }

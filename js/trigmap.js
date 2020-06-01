@@ -33,6 +33,12 @@ function initPage() {
     view3DPopup.style.display = "none";
   }
 
+  // Set up the Comment viewer pop up close button
+  var viewCommentPopup = document.getElementById("viewComment");
+  document.getElementById("viewCommentDismiss").onclick = function() {
+    viewCommentPopup.style.display = "none";
+  }
+
   // Set up the coloured markers for Leaflet
   redIcon = new L.Icon({
     iconUrl: 'assets/markers/marker-icon-red.png',
@@ -261,6 +267,16 @@ function populateScreen( trigList ) {
         console.log( "    URL: " + hotSpot.URL );
         console.log( "    Comment: " + hotSpot.Comment );
       }
+      else if( hotSpot.type == "comment" ) {
+        viewer.addHotSpot( { "pitch":hotSpot.pitch, "yaw":hotSpot.yaw,
+                             "type":"info", "text":hotSpot.text,
+                             "cssClass": "comment-hotspot",
+                             "clickHandlerFunc": viewCommentHandler,
+                             "clickHandlerArgs" : [ hotSpot.Comment ]
+        }, entry.id);
+        console.log( "  Hotspot/comment: " + hotSpot.text );
+        console.log( "    Comment: " + hotSpot.Comment );
+      }
       else {
         console.log( "  Hotspot/unknown type: " + hotSpot.type );
       }
@@ -402,4 +418,12 @@ function view3DHandler( div, clickHandlerArgs ) {
   view3DModelIframe.src = clickHandlerArgs[0];
   view3DText.innerHTML = clickHandlerArgs[1];
   view3DPopup.style.display = "block";
+};
+
+function viewCommentHandler( div, clickHandlerArgs ) {
+  var viewCommentPopup = document.getElementById("viewComment");
+  var viewCommentText = document.getElementById("viewCommentText");
+
+  viewCommentText.innerHTML = clickHandlerArgs[0];
+  viewCommentPopup.style.display = "block";
 };
