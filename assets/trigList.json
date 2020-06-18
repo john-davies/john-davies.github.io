@@ -73,7 +73,8 @@
 			"hotSpots": [
 				{ "pitch": 3.2, "yaw": -47.2, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.7, "targetYaw": -69.1 },
 				{ "pitch": 2.1, "yaw": -62.4, "type": "scene", "text": "Carreg yr Ogof Trig Point", "sceneId": "carreg_yr_ogof", "targetPitch": 2, "targetYaw": 100.6 },
-				{ "pitch": 0.7, "yaw": 147, "type": "scene", "text": "Tair Carn Isaf Trig Point", "sceneId": "tair_carn_isaf", "targetPitch": 4, "targetYaw": -158.4 }
+				{ "pitch": 0.7, "yaw": 147, "type": "scene", "text": "Tair Carn Isaf Trig Point", "sceneId": "tair_carn_isaf", "targetPitch": 4, "targetYaw": -158.4 },
+				{ "pitch": 0.8, "yaw": -169, "type": "3d", "text": "Garreg Lwyd marker Stone", "URL": "https://sketchfab.com/models/2c81a0fe3e3441978c44f2edc48bd38b/embed", "Comment": "3D model created from 56 photographs using openMVG and openMVS" }
 			],
 			"mapData": { "lat": 51.845547, "long": -3.830031 },
 			"extraData": { "displayName": "Garreg Lwyd", "imagePath": "assets/preview/garreg_lwyd.jpg", "height": 617, "order": 2, "OsGridRef": "SN740179", "comment": "This is a comment" },
