@@ -12,6 +12,7 @@
 				{ "pitch": 1.1, "yaw": 156.1, "type": "scene", "text": "Fan Nedd Trig Point", "sceneId": "fan_nedd", "targetPitch": 5, "targetYaw": -77.5 },
 				{ "pitch": -0.3, "yaw": -95, "type": "scene", "text": "Bwlch Y Ddeuwynt Trig Point", "sceneId": "bwlch_y_ddeuwynt", "targetPitch": 5.8, "targetYaw": 33.8 },
 				{ "pitch": 1.4, "yaw": -63.9, "type": "scene", "text": "Tair Carn Isaf Trig Point", "sceneId": "tair_carn_isaf", "targetPitch": 3, "targetYaw": -166.7 },
+				{ "pitch": -0.4, "yaw": -137.5, "type": "scene", "text": "Cribarth Trig Point", "sceneId": "cribarth", "targetPitch": 5.9, "targetYaw": -173.1 },
 				{ "pitch": -14.7, "yaw": 147.25, "type": "3d", "text": "Llyn y Fan Fawr", "URL": "https://sketchfab.com/models/ca41cf4841ff46d0bf8c28f369bf52a3/embed", "Comment": "LiDAR data from the Welsh Government Portal ( see Sketchfab page for link )<br>Image data ©2019 Google" },
 				{ "pitch": 1.1, "yaw": -62.7, "type": "info", "text": "Foel Fawr Limestone Workings", "URL": "https://theretiredengineer.wordpress.com/2017/12/17/brecon-beacons-industrial-remains/" },
 				{ "pitch": -2, "yaw": 39.8, "type": "comment", "text": "Usk Reservoir", "Comment": " <img src=\"assets/236456.jpg\" alt=\"Usk Reservois Dam Wall\" style=\"float:right;width:400px;border:10px solid white\"> \n\n<p>The Usk Reservoir is located in the upper Usk Valley, at 1,050 feet (320 m) above sea level, and is located in the counties of Carmarthenshire and Powys, in southern Wales. The boundary between the counties runs through the reservoir.</p>\n\n<p>The reservoir is situated in part of the Brecon Beacons National Park. It is situated to the western end of the park, sitting below the Black Mountain, and most of the summits in the range are visible from the reservoir, especially Fan Hir, Fan Brycheiniog, Fan Foel, Picws Du and Waun Lefrith. It lies about six miles to the north of the centre of the escarpment at Fan Foel, and is an important landmark for walkers on the mountain range.</p>\n\n<p>Completed in 1955 by Swansea City Council, the dam is approximately 100 ft (30m) in height and 1600 ft (480m) in width. It was the first example in the UK of an earth dam with horizontal drainage blankets. The reservoir covers some 280 acres (110 ha) of land. It can be located just off the minor road between Trecastle and Llanddeusant, 7 miles (11 km) west of Sennybridge. The reservoir is now owned by Welsh Water and the surrounding woods by Natural Resources Wales. Most of the area is open to walkers and cyclists via forest tracks and other footpaths. There are several small car parks for visitors. The reservoir is stocked with fresh water fish such as trout and can be fished with an appropriate licence.</p>\n\n<p>Information from <a href=\"https://en.wikipedia.org/wiki/Usk_Reservoir\" target=\"_blank\">Wikipedia entry</a></p>\n\n\n" },
@@ -59,11 +60,16 @@
 		{
 			"id": "cribarth",
 			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
-			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"multiRes": { "basePath": "assets/pano/cribarth", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 6, "cubeResolution": 9120 },
 			"hotSpots": [
+				{ "pitch": 5.9, "yaw": -173.1, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": -0.4, "targetYaw": -137.5 },
+				{ "pitch": 3.3, "yaw": 121, "type": "scene", "text": "Garreg Lwyd Trig Point", "sceneId": "garreg_lwyd", "targetPitch": 2.2, "targetYaw": -20.2 },
+				{ "pitch": 2.2, "yaw": 110.7, "type": "scene", "text": "Tair Carn Isaf Trig Point", "sceneId": "tair_carn_isaf", "targetPitch": 1.9, "targetYaw": -137 },
+				{ "pitch": 4.8, "yaw": -124.1, "type": "scene", "text": "Fan Gyhiych Trig Point", "sceneId": "fan_gyhirych", "targetPitch": 1, "targetYaw": -51.8 },
+				{ "pitch": 1.9, "yaw": -129.7, "type": "info", "text": "Line of Neath – Brecon Railway", "URL": "https://theretiredengineer.wordpress.com/2019/12/01/neath-and-brecon-railway-1/" }
 			],
 			"mapData": { "lat": 51.814032, "long": -3.701016 },
-			"extraData": { "displayName": "Cribarth", "imagePath": "assets/preview/not_available.jpg", "height": 423, "order": 12, "OsGridRef": "SN828142", "comment": "This is a comment" },
+			"extraData": { "displayName": "Cribarth", "imagePath": "assets/preview/cribarth.jpg", "height": 423, "order": 2, "OsGridRef": "SN828142", "comment": "This is a comment" },
 			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
 		},
 		{
@@ -74,7 +80,8 @@
 				{ "pitch": 3.2, "yaw": -47.2, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.7, "targetYaw": -69.1 },
 				{ "pitch": 2.1, "yaw": -62.4, "type": "scene", "text": "Carreg yr Ogof Trig Point", "sceneId": "carreg_yr_ogof", "targetPitch": 2, "targetYaw": 100.6 },
 				{ "pitch": 0.7, "yaw": 147, "type": "scene", "text": "Tair Carn Isaf Trig Point", "sceneId": "tair_carn_isaf", "targetPitch": 4, "targetYaw": -158.4 },
-				{ "pitch": 0.8, "yaw": -169, "type": "3d", "text": "Garreg Lwyd marker Stone", "URL": "https://sketchfab.com/models/2c81a0fe3e3441978c44f2edc48bd38b/embed", "Comment": "3D model created from 56 photographs using openMVG and openMVS" }
+				{ "pitch": 0.8, "yaw": -169, "type": "3d", "text": "Garreg Lwyd marker Stone", "URL": "https://sketchfab.com/models/2c81a0fe3e3441978c44f2edc48bd38b/embed", "Comment": "3D model created from 56 photographs using openMVG and openMVS" },
+				{ "pitch": 2.2, "yaw": -20.2, "type": "scene", "text": "Cribarth Trig Point", "sceneId": "cribarth", "targetPitch": 3.3, "targetYaw": 121 }
 			],
 			"mapData": { "lat": 51.845547, "long": -3.830031 },
 			"extraData": { "displayName": "Garreg Lwyd", "imagePath": "assets/preview/garreg_lwyd.jpg", "height": 617, "order": 2, "OsGridRef": "SN740179", "comment": "This is a comment" },
@@ -97,6 +104,7 @@
 			"hotSpots": [
 				{ "pitch": 3.9, "yaw": -166.7, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.4, "targetYaw": -63.9 },
 				{ "pitch": 4, "yaw": -158.4, "type": "scene", "text": "Garreg Lwyd Trig Point", "sceneId": "garreg_lwyd", "targetPitch": 0.7, "targetYaw": 147 },
+				{ "pitch": 1.9, "yaw": -137, "type": "scene", "text": "Cribarth Trig Point", "sceneId": "cribarth", "targetPitch": 2.2, "targetYaw": 110.7 },
 				{ "pitch": -0.5, "yaw": 90, "type": "info", "text": "Carreg Cennen Castle", "URL": "https://cadw.gov.wales/visit/places-to-visit/carreg-cennen" }
 			],
 			"mapData": { "lat": 51.833836, "long": -3.911926 },
@@ -173,7 +181,8 @@
 			"hotSpots": [
 				{ "pitch": 3.1, "yaw": 17.4, "type": "scene", "text": "Fan Brycheiniog Trig Point", "sceneId": "fan_brycheiniog", "targetPitch": 1.3, "targetYaw": 160.7 },
 				{ "pitch": 2.7, "yaw": 161.3, "type": "info", "text": "Pen y Fan", "URL": "https://en.wikipedia.org/wiki/Pen_y_Fan" },
-				{ "pitch": 1.3, "yaw": 179.6, "type": "scene", "text": "Fan Nedd Trig Point", "sceneId": "fan_nedd", "targetPitch": 3.6, "targetYaw": -87.4 }
+				{ "pitch": 1.3, "yaw": 179.6, "type": "scene", "text": "Fan Nedd Trig Point", "sceneId": "fan_nedd", "targetPitch": 3.6, "targetYaw": -87.4 },
+				{ "pitch": 1, "yaw": -51.8, "type": "scene", "text": "Cribarth Trig Point", "sceneId": "cribarth", "targetPitch": 4.8, "targetYaw": -124.1 }
 			],
 			"mapData": { "lat": 51.85897, "long": -3.626951 },
 			"extraData": { "displayName": "Fan Gyhirych", "imagePath": "assets/preview/fan_gyhirych.jpg", "height": 725, "order": 3, "OsGridRef": "SN881191", "comment": "This is a comment" },
