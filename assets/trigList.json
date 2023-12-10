@@ -408,22 +408,33 @@
 		},
 		{
 			"id": "mynydd_bettws",
-			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
-			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -16.5, "pitch": 0, "maxPitch": 16.5, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/mynydd_bettws", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 6, "cubeResolution": 9216 },
 			"hotSpots": [
+				{ "pitch": 2.9, "yaw": 30, "type": "scene", "text": " Mynydd Sylen Trig Point", "sceneId": "mynydd_sylen", "targetPitch": 2.9, "targetYaw": 89.5 },
+				{ "pitch": 2.5, "yaw": 151.5, "type": "scene", "text": "Garreg Lwyd Trig Point", "sceneId": "garreg_lwyd", "targetPitch": -0.4, "targetYaw": -137.5 },
+				{ "pitch": 1.6, "yaw": 130.6, "type": "scene", "text": "Tair Carn Isaf Trig Point", "sceneId": "tair_carn_isaf", "targetPitch": -0.4, "targetYaw": -137.5 },
+				{ "pitch": 2.6, "yaw": 38, "type": "scene", "text": "Mynydd Llangyndeyrn Trig Point", "sceneId": "mynydd_llangyndeyrn", "targetPitch": 4.4, "targetYaw": 148.2 },
+				{ "pitch": 2.8, "yaw": 1.8, "type": "scene", "text": "Llanmadoc Hill Trig Point", "sceneId": "llanmadoc_hill", "targetPitch": -0.4, "targetYaw": -137.5 }
 			],
 			"mapData": { "lat": 51.777834, "long": -3.944895 },
-			"extraData": { "displayName": "Mynydd Bettws", "imagePath": "assets/preview/not_available.jpg", "height": 339, "order": 13, "OsGridRef": "SN659106", "comment": "This is a comment" },
+			"extraData": { "displayName": "Mynydd Bettws", "imagePath": "assets/preview/mynydd_bettws.jpg", "height": 339, "order": 3, "OsGridRef": "SN659106", "comment": "This is a comment" },
 			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
 		},
 		{
 			"id": "mynydd_llangyndeyrn",
-			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
-			"multiRes": { "basePath": "assets/pano/not_available", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 2, "cubeResolution": 632 },
+			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -17, "pitch": 0, "maxPitch": 17, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
+			"multiRes": { "basePath": "assets/pano/mynydd_llangyndeyrn", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 6, "cubeResolution": 9048 },
 			"hotSpots": [
+				{ "pitch": 3.9, "yaw": -159.8, "type": "scene", "text": " Mynydd Sylen Trig Point", "sceneId": "mynydd_sylen", "targetPitch": 2.5, "targetYaw": -155.9 },
+				{ "pitch": 4.4, "yaw": 148.2, "type": "scene", "text": "Mynydd y Betws Trig Point", "sceneId": "mynydd_bettws", "targetPitch": 2.6, "targetYaw": 38 },
+				{ "pitch": 4.8, "yaw": 127.9, "type": "scene", "text": " Garreg Lwyd Trig Point", "sceneId": "garreg_lwyd", "targetPitch": -0.4, "targetYaw": -137.5 },
+				{ "pitch": 2.2, "yaw": -112.7, "type": "scene", "text": " Llanmadoc Hill Trig Point", "sceneId": "llanmadoc_hill", "targetPitch": -0.4, "targetYaw": -137.5 },
+				{ "pitch": 2.3, "yaw": 96.4, "type": "info", "text": "Paxton’s Tower", "URL": "https://www.nationaltrust.org.uk/visit/wales/history-of-paxtons-tower" },
+				{ "pitch": 0.8, "yaw": 90.9, "type": "info", "text": "National Botanic Gardens of Wales", "URL": "https://botanicgarden.wales/visit/" }
 			],
 			"mapData": { "lat": 51.797428, "long": -4.202234 },
-			"extraData": { "displayName": "Mynydd Llangyndeyrn", "imagePath": "assets/preview/not_available.jpg", "height": 263, "order": 12, "OsGridRef": "SN482132", "comment": "This is a comment" },
+			"extraData": { "displayName": "Mynydd Llangyndeyrn", "imagePath": "assets/preview/mynydd_llangyndeyrn.jpg", "height": 263, "order": 2, "OsGridRef": "SN482132", "comment": "This is a comment" },
 			"versionData": { "version": 1.0, "date": "30/05/19", "comment": "This is a comment" }
 		},
 		{
@@ -441,6 +452,10 @@
 			"imageData": { "hfov": 100, "vaov": 38, "vOffset": 0, "minPitch": -19, "pitch": 0, "maxPitch": 19, "avoidShowingBackground": true, "autoLoad": true, "type": "multires" },
 			"multiRes": { "basePath": "assets/pano/mynydd_sylen", "path": "/%l/%s%y_%x", "fallbackPath": "/fallback/%s", "extension": "jpg", "tileResolution": 512, "maxLevel": 6, "cubeResolution": 8696 },
 			"hotSpots": [
+				{ "pitch": 3.5, "yaw": -104, "type": "scene", "text": "Garreg Lwyd Trig Point", "sceneId": "garreg_lwyd", "targetPitch": -0.4, "targetYaw": -137.5 },
+				{ "pitch": 2.5, "yaw": -155.9, "type": "scene", "text": "Mynydd Llangyndeyrn Trig Point", "sceneId": "mynydd_llangyndeyrn", "targetPitch": 3.9, "targetYaw": -159.8 },
+				{ "pitch": 1, "yaw": 38.9, "type": "scene", "text": "Llanmadoc Hill Trig Point", "sceneId": "llanmadoc_hill", "targetPitch": -0.4, "targetYaw": -137.5 },
+				{ "pitch": 2.9, "yaw": 89.5, "type": "scene", "text": "Mynydd Bettws Trig Point", "sceneId": "mynydd_bettws", "targetPitch": 2.9, "targetYaw": 30 }
 			],
 			"mapData": { "lat": 51.751029, "long": -4.152183 },
 			"extraData": { "displayName": "Mynydd Sylen", "imagePath": "assets/preview/mynydd_sylen.jpg", "height": 285, "order": 3, "OsGridRef": "SN515080", "comment": "This is a comment" },

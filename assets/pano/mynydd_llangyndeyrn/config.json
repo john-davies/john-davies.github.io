@@ -1,0 +1,18 @@
+{
+    "hfov": 100.0,
+    "vaov": 38.0,
+    "vOffset": 0.0,
+    "minPitch": -19.0,
+       "pitch": 0.0,
+    "maxPitch": 19.0,
+    "avoidShowingBackground": true,
+    "type": "multires",
+    "multiRes": {
+        "path": "/%l/%s%y_%x",
+        "fallbackPath": "/fallback/%s",
+        "extension": "jpg",
+        "tileResolution": 512,
+        "maxLevel": 6,
+        "cubeResolution": 9048
+    }
+}
